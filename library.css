@@ -1,43 +1,30 @@
-:root{
-    --lt-primary: #F44F4F;
-
-    --primary: #E03535;
-    --shadow-primary: #901414;
-
-    --dark-primary: #4A0606;
-    --bg-primary: #170404;
-
-    --gray-op-2: #3C2525;
-    --gray-op-1: #5C4545;
+:root {
+    /* Colors*/
+    --primary: #6C63FF; /* Lavanda brillante */
+    --secondary: #FF6584; /* Rosa coral */
+    --bg-dark: #1F1F1F; /* Fondo oscuro */
+    --bg-light: #F9F9F9; /* Fondo claro */
+    --text-dark: #333333; /* Texto oscuro */
+    --text-light: #FFFFFF; /* Texto claro */
+    --accent: #FFD166; /* Amarillo suave */
+    --muted: #BDBDBD; /* Gris neutro */
     
-    --gray-5: #786262;
-    --gray-4: #968787;
-    --gray-3: #AAA2A2;
-    --gray-2: #CFC3C3;
-    --gray-1: #FCEDED;
-
-    --white: #FFFFFF;
-    --text: #000000;
-
     /* --------------------- */
-
     --radius-1: 4px;
     --radius-2: 16px;
     --radius-3: 32px;
     --radius-4: 40px;
 
     /* --------------------- */
-
-    --distance-1:  0.25rem; /* 16px = 1rem */
-    --distance-2:  0.5rem; /* 16px = 1rem */
-    --distance-3:  1rem; /* 16px = 1rem */
-    --distance-4:  2rem; /* 16px = 1rem */
-    --distance-5:  2.5rem; /* 16px = 1rem */
-    --distance-6:  3.75rem; /* 16px = 1rem */
-    --distance-7:  4.375rem; /* 16px = 1rem */
+    --distance-1: 0.25rem; /* 16px = 1rem */
+    --distance-2: 0.5rem; /* 16px = 1rem */
+    --distance-3: 1rem; /* 16px = 1rem */
+    --distance-4: 2rem; /* 16px = 1rem */
+    --distance-5: 2.5rem; /* 16px = 1rem */
+    --distance-6: 3.75rem; /* 16px = 1rem */
+    --distance-7: 4.375rem; /* 16px = 1rem */
 
     /* --------------------- */
-
     --size-1: 1rem;
     --size-2: 1.25rem;
     --size-3: 1.5rem;
@@ -48,7 +35,9 @@
     --size-max-1: 2.85rem;
     --size-max-2: 3.5rem;
     --size-max-3: 4rem;
+
 }
+
 *{
     margin: 0;
     padding: 0;

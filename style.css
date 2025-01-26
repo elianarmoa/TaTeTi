@@ -1,0 +1,124 @@
+:root {
+    --primary-dark: #2E1B47; /* Fondo oscuro atractivo */
+    --violet: #9B4DFF; /* Violeta para la "X" */
+    --fluor-green: #00FF87; /* Verde fluor para la "O" */
+    --light-bg: #F5F5F5; /* Fondo claro para contrastar */
+    --highlight: #ff2bea; /* Rosa brillante */
+    --button-bg: #1c1b1b; /* Fondo del botón */
+    --button-hover: #441941; /* Hover del botón */
+    --border-light: #E0E0E0; /* Borde suave */
+    --text-color: #FFFFFF; /* Texto blanco para destacar */
+    --shadow-dark: rgba(0, 0, 0, 0.5); /* Sombra oscura */
+    --shadow-light: rgba(255, 255, 255, 0.1); /* Sombra suave */
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales del body */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--primary-dark); /* Fondo oscuro */
+    color: var(--text-color); /* Color de texto blanco */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    text-align: center;
+    background: linear-gradient(135deg, #2E1B47, #4B006E); /* Degradado atractivo */
+}
+
+/* Estilo del contenedor del juego */
+.game-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.2); /* Fondo semi-transparente */
+    box-shadow: 0px 4px 20px var(--shadow-dark); /* Sombra atractiva */
+    backdrop-filter: blur(10px); /* Efecto de difuminado en el fondo */
+}
+
+/* Título del juego */
+h1 {
+    font-size: 3rem; /* Título grande */
+    color: var(--highlight); /* Color rosa brillante */
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 10px var(--shadow-light); /* Sombra para destacar */
+}
+
+/* Estilos para el tablero */
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 150px); /* Columnas más grandes */
+    grid-template-rows: repeat(3, 150px); /* Filas más grandes */
+    gap: 10px; /* Mayor espacio entre celdas */
+    margin-bottom: 20px;
+}
+
+/* Estilo de las celdas */
+.cell {
+    width: 150px;
+    height: 150px;
+    background-color: #333; /* Fondo oscuro */
+    border: 3px solid var(--border-light); /* Borde suave */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem; /* Tamaño de fuente más grande */
+    cursor: pointer;
+    color: var(--text-color);
+    transition: background-color 0.3s ease, transform 0.2s; /* Transiciones */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.cell:hover {
+    background-color: var(--violet); /* Cambio de color al pasar el ratón */
+    transform: scale(1.1); /* Agranda la celda */
+}
+
+/* Colores específicos para "X" y "O" */
+.cell.x {
+    color: var(--violet); /* Violeta para "X" */
+}
+
+.cell.o {
+    color: var(--fluor-green); /* Verde fluor para "O" */
+}
+
+/* Estilo del botón de reiniciar */
+button {
+    padding: 15px 30px;
+    background-color: var(--button-bg); /* Fondo del botón */
+    color: var(--text-color);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 30px;
+}
+
+button:hover {
+    background-color: var(--button-hover); /* Hover del botón */
+}
+
+button:active {
+    transform: scale(0.98); /* Efecto al hacer clic */
+}
+
+/* Estilo para el estado del juego */
+#status {
+    font-size: 1.7rem; /* Tamaño de fuente para el estado */
+    margin-top: 20px;
+    color: var(--highlight); /* Color para el texto del estado */
+    text-shadow: 1px 1px 5px var(--shadow-light); /* Sombra suave */
+}
+
